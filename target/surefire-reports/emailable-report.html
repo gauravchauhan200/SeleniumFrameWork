@@ -8,21 +8,17 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Surefire suite</th></tr>
-<tr><td><a href="#t0">Surefire test</a></td><td class="num">3</td><td class="num">0</td><td class="num attn">1</td><td class="num attn">1</td><td class="num">26,979</td><td></td><td></td></tr>
+<tr><th colspan="8">Suite</th></tr>
+<tr><td><a href="#t0">Validation Test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">5,472</td><td></td><td></td></tr>
+<tr class="stripe"><td><a href="#t1">SubmitOrder</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">19,961</td><td></td><td></td></tr>
+<tr><th>Total</th><th class="num">4</th><th class="num">0</th><th class="num">0</th><th class="num">0</th><th class="num">25,433</th><th colspan="2"></th></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">ecom.tests.ErrorValidationTest</td><td><a href="#m0">LoginErrorValidation</a></td><td rowspan="1">1761507173515</td><td rowspan="1">1039</td></tr><tr><th colspan="4">Surefire test &#8212; retried</th></tr><tr class="retriedeven"><td rowspan="1">ecom.tests.ErrorValidationTest</td><td><a href="#m1">LoginErrorValidation</a></td><td rowspan="1">1761507169947</td><td rowspan="1">555</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">ecom.tests.SubmitOrderTest</td><td><a href="#m2">orderHistoryTest</a></td><td rowspan="1">1761507191452</td><td rowspan="1">870</td></tr><tr class="passedeven"><td><a href="#m3">submitOrder</a></td><td rowspan="2">1761507178082</td><td rowspan="2">3483</td></tr><tr class="passedeven"><td><a href="#m4">submitOrder</a></td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Validation Test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">ecom.tests.ErrorValidationTest</td><td><a href="#m0">LoginErrorValidation</a></td><td rowspan="1">1761511189414</td><td rowspan="1">569</td></tr></tbody>
+<tbody id="t1"><tr><th colspan="4">SubmitOrder &#8212; passed</th></tr><tr class="passedeven"><td rowspan="3">ecom.tests.SubmitOrderTest</td><td><a href="#m1">orderHistoryTest</a></td><td rowspan="1">1761511203429</td><td rowspan="1">1043</td></tr><tr class="passedeven"><td><a href="#m2">submitOrder</a></td><td rowspan="2">1761511192808</td><td rowspan="2">3655</td></tr><tr class="passedeven"><td><a href="#m3">submitOrder</a></td></tr></tbody>
 </table>
-<h2>Surefire test</h2><h3 id="m0">ecom.tests.ErrorValidationTest#LoginErrorValidation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorrec email or password.]
-	at ecom.tests.ErrorValidationTest.LoginErrorValidation(ErrorValidationTest.java:15)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m1">ecom.tests.ErrorValidationTest#LoginErrorValidation</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [Incorrect email or password.] but found [Incorrec email or password.]
-	at ecom.tests.ErrorValidationTest.LoginErrorValidation(ErrorValidationTest.java:15)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 36 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m2">ecom.tests.SubmitOrderTest#orderHistoryTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m3">ecom.tests.SubmitOrderTest#submitOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{pass=Function@1234, product=ZARA COAT 3, email=admingama@example.com}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
-<h3 id="m4">ecom.tests.SubmitOrderTest#submitOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{pass=Network@1234, product=ADIDAS ORIGINAL, email=networkadmin@example.com}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Validation Test</h2><h3 id="m0">ecom.tests.ErrorValidationTest#LoginErrorValidation</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>SubmitOrder</h2><h3 id="m1">ecom.tests.SubmitOrderTest#orderHistoryTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">ecom.tests.SubmitOrderTest#submitOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{pass=Function@1234, product=ZARA COAT 3, email=admingama@example.com}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">ecom.tests.SubmitOrderTest#submitOrder</h3><table class="result"><tr class="param"><th>Parameter #1</th></tr><tr class="param stripe"><td>{pass=Network@1234, product=ADIDAS ORIGINAL, email=networkadmin@example.com}</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>

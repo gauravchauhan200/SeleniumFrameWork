@@ -10,6 +10,14 @@
           <include name="LoginErrorValidation"/>
         </methods>
       </class> <!-- ecom.tests.ErrorValidationTest -->
+      <class name="ecom.tests.SubmitOrderTest">
+        <methods>
+          <include name="orderHistoryTest"/>
+          <include name="launchApplication"/>
+          <include name="submitOrder"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- ecom.tests.SubmitOrderTest -->
     </classes>
   </test> <!-- Surefire test(failed) -->
 </suite> <!-- Failed suite [Surefire suite] -->

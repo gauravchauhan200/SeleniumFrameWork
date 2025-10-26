@@ -12,8 +12,8 @@ public class ErrorValidationTest extends BaseTest
 	public void LoginErrorValidation() throws IOException 
 	{
 		lp.loginApplication("mingama@example.com", "Function@1234");
-		Assert.assertEquals("Incorrec email or password.", lp.getErrorMessage());
-		Assert.assertFalse(true);
+		Assert.assertEquals("Incorrect email or password.", lp.getErrorMessage());
+		
 	
 	}
 	

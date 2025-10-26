@@ -15,4 +15,16 @@
       </class> <!-- ecom.tests.ErrorValidationTest -->
     </classes>
   </test> <!-- Validation Test(failed) -->
+  <test thread-count="5" parallel="tests" name="SubmitOrder(failed)">
+    <classes>
+      <class name="ecom.tests.SubmitOrderTest">
+        <methods>
+          <include name="orderHistoryTest"/>
+          <include name="launchApplication"/>
+          <include name="submitOrder"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- ecom.tests.SubmitOrderTest -->
+    </classes>
+  </test> <!-- SubmitOrder(failed) -->
 </suite> <!-- Failed suite [Suite] -->
