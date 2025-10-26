@@ -11,6 +11,7 @@ import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import ecom.pageobjects.CartPage;
+import ecom.pageobjects.OrderPage;
 
 
 
@@ -27,12 +28,20 @@ public class AbstractComponent
     @FindBy(css=".btn.btn-custom[routerlink='/dashboard/cart']")
     WebElement cart;
     
+    @FindBy(css="[routerlink*='myorders']")
+    WebElement orderHeader;
+    
     public void waitForElementToAppear(By FindBy) 
     {
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5000));
         wait.until(ExpectedConditions.visibilityOfElementLocated(FindBy));
     }
 
+    public void waitForWebElementToAppear(WebElement FindBy) 
+    {
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5000));
+        wait.until(ExpectedConditions.visibilityOf(FindBy));
+    }
 
     public void waitForElementToDisappear(WebElement ele)
     {
@@ -47,7 +56,13 @@ public class AbstractComponent
          CartPage cp=new CartPage(driver);
          return cp;
     }
-
+    
+    public OrderPage goToOrderPage()
+    {
+    	orderHeader.click();
+    	OrderPage op = new OrderPage(driver);
+    	return op;
+    }
 
 
 

@@ -1,0 +1,8 @@
+ecom\pageobjects\OrderConfirmationPage.class
+ecom\pageobjects\OrderPage.class
+ecom\pageobjects\ProductCatalogue.class
+ecom\pageobjects\CartPage.class
+ecom\abstractcomponents\AbstractComponent.class
+ecom\pageobjects\CheckOutPage.class
+ecom\pageobjects\LandingPage.class
+ecom\resources\ExtentReporterNG.class

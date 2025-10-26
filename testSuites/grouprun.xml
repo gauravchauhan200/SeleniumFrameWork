@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel ="tests" name="Suite">
+  
+   
+  
+  <groups>
+  	<run>
+  		<include name="purchase"/>
+  	</run>
+  </groups>
+  
+  <listeners>
+  <listener class-name = "ecom.testcomponents.Listeners"/>
+  </listeners>
+  
+  <test thread-count="5" name="SubmitOrder">
+    <classes>
+      <class name="ecom.tests.SubmitOrderTest"/>
+    </classes>
+  </test> <!-- Test -->
+  
+  
+</suite> <!-- Suite -->
+ 

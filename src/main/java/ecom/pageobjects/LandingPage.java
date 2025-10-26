@@ -31,7 +31,9 @@ WebDriver driver;
     @FindBy(id="login")
     WebElement login;
 
-
+    @FindBy(css="[class*='flyInOut']")
+    WebElement errorMessage;
+    
    public ProductCatalogue loginApplication(String email,String password)
     {
         userEmail.sendKeys(email);
@@ -41,6 +43,13 @@ WebDriver driver;
          return pc;
     }
 
+   
+   public String getErrorMessage()
+   {
+	   waitForWebElementToAppear(errorMessage); 
+	   return errorMessage.getText();
+   }
+   
     public void goTo()
     {
         driver.get("https://rahulshettyacademy.com/client/#/auth/login");

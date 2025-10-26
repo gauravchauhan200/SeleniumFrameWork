@@ -5,7 +5,9 @@
     <classes>
       <class name="ecom.tests.SubmitOrderTest">
         <methods>
-          <include name="submitOrder"/>
+          <include name="launchApplication"/>
+          <include name="submitOrder" invocation-numbers="0 1"/>
+          <include name="tearDown"/>
         </methods>
       </class> <!-- ecom.tests.SubmitOrderTest -->
     </classes>
